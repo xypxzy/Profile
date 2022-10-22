@@ -14,9 +14,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background: url(https://4kwallpapers.com/images/wallpapers/strands-pattern-cgi-3d-background-blue-cyan-background-3840x2160-2246.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgba(55, 56, 77, 0.993);
   font-family: "Cabin", sans-serif;
 }
 
@@ -33,7 +31,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 40px 20px;
+  margin: 40px 80px;
   font-weight: 600;
   color: rgb(117, 117, 117);
 }
@@ -127,15 +125,16 @@ body {
     padding: 0;
     border-radius: 0;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
   }
   .dropBtn {
     border-radius: 20px;
-    opacity: 1;
+    z-index: 0;
   }
   .dropdown-content {
     left: 0;
     right: 5px;
+    z-index: 1;
   }
 
   .hamburger-menu {
@@ -188,8 +187,51 @@ body {
     width: 60px;
     width: 60px;
   }
+
+  .img-block img {
+    width: 200px;
+  }
   .icon p,
   a {
     display: none;
   }
+}
+
+@media (max-width: 930px) {
+  .img-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+  .img-block img {
+    gap: 2rem;
+  }
+}
+
+.content {
+  overflow: hidden;
+}
+
+.img-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 6rem;
+}
+
+.img-block img {
+  border-radius: 150rem;
+}
+
+.img-text {
+  font-size: 18px;
+  color: #262626;
+}
+
+.img-text h3 {
+  font-size: 28px;
+  margin: 15px 0;
 }
