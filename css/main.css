@@ -11,7 +11,6 @@ ul {
 }
 
 body {
-  height: 100vh;
   display: flex;
   justify-content: center;
   background: rgba(55, 56, 77, 0.993);
@@ -125,7 +124,6 @@ body {
     padding: 0;
     border-radius: 0;
     width: 100vw;
-    height: 200vh;
   }
   .dropBtn {
     border-radius: 20px;
@@ -183,6 +181,9 @@ body {
 }
 
 @media (max-width: 720px) {
+  body {
+    font-size: 14px;
+  }
   .icon img {
     width: 60px;
     width: 60px;
@@ -234,4 +235,108 @@ body {
 .img-text h3 {
   font-size: 28px;
   margin: 15px 0;
+}
+
+/*Skills-block*/
+
+.aboutMe-block {
+  margin: 10vh 90px;
+}
+
+.skills-block {
+  padding: 2vw 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills {
+  display: flex;
+  align-items: flex-start;
+  width: 27vw;
+  margin: 20px 0;
+}
+
+.skills img {
+  width: 5.5vw;
+  padding: 20px;
+}
+/*Testimonials*/
+.testimonials {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10vh 90px;
+}
+
+.person {
+  position: relative;
+  padding: 3vh 0vw;
+  width: 40vw;
+  height: 13vh;
+  margin: 0 2vw;
+  border: #000 solid 1px;
+  border-radius: 20px;
+}
+
+.person img {
+  position: absolute;
+  border-radius: 100%;
+  border: #999 solid 1px;
+  width: 3.5vw;
+  left: -30px;
+  top: -20px;
+  z-index: 0;
+}
+
+.name {
+  margin-left: 20px;
+}
+
+.person p {
+  padding: 10px 10px;
+  z-index: 1;
+}
+
+.slider {
+  position: absolute;
+  left: 32vw;
+  top: 18vh;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.slide.active {
+  height: 4px;
+  width: 35px;
+  background-color: rgb(28, 192, 221);
+  transition: all 0.2s ease-out;
+}
+
+.slide {
+  border-radius: 100px;
+  height: 4px;
+  width: 20px;
+  background-color: rgb(202, 202, 202);
+
+  transition: all 0.2s ease-out;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 3vw;
+  background-color: #dddcdc;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.social-media a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
 }
